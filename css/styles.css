@@ -1,0 +1,742 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*      IMPORTATION DES POLICES                                                                  */
+/*-----------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
+/*-----------------------------------------------------------------------------------------------*/
+/*      Déclaration des variables                                                                */
+/*-----------------------------------------------------------------------------------------------*/
+:root
+    {
+        --normal-blue-color   : #0065FC;
+        --light-blue-color    : #DEEBFF;
+        --light-grey-color    : #F2F2F2;
+        --normal-grey-color   : #BFBFBF;
+        --normal-yellow-color : #ffc90e;
+        --normal-white-color  : #FFFFFF;
+        --normal-acqua-color  : #00FFFF;
+    }
+  
+/*-----------------------------------------------------------------------------------------------*/
+/*     Box-sizing                                                                                */
+/*-----------------------------------------------------------------------------------------------*/
+*
+    {
+        box-sizing: border-box; /* Opera/IE 8+ */
+        -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+        -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Général : Définition des polices, marges, liens ...                                      */
+/*-----------------------------------------------------------------------------------------------*/
+body
+    {
+        font-size: 16px;
+        font-family: Raleway, Arial, Helvetica, sans-serif;
+        width:100%;
+    } 
+
+.Conteneur
+    {
+        max-width:1500px;
+        width:93%;
+        margin:auto;
+    }
+
+.Conteneur img
+    {
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+a
+    {
+        text-decoration:none;
+        color:black;
+    }
+
+ #Blocs_Hebergements, #Activites, footer
+    {
+        min-width:206px;
+    }
+
+body figure
+    {
+    box-shadow: 1px 1px 5px  var(--normal-grey-color);
+    }
+
+figure:hover
+    {
+        color: var(--normal-blue-color);
+        box-shadow: 2px 3px 8px var(--normal-blue-color);
+        transform: scale(1.05);
+        transition: ease 0.5s;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*      HEADER                                                                                   */
+/*-----------------------------------------------------------------------------------------------*/
+/* Logo et menu de navigateur */
+ #Header_Logo_Nav
+    {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+ #Header_Logo_Nav a
+    {
+        display:block;
+    }
+
+ /* Logo */
+ header img 
+    {
+        width: auto;
+        height: 40px;
+        margin-top: 12px;
+        object-fit: cover;
+        padding-left: 3px;
+    }
+
+  /* Menu */
+ header nav
+    {
+        width:22%;
+        height:110px;
+    }
+
+header ul 
+    {
+        display : flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        text-align:center;
+    }
+
+.Header_Nav_Liste
+    {
+        border-top: 3px solid transparent;
+        padding-top: 40px;
+        width: 50%;
+        font-size: 14px;
+    }
+
+.Header_Nav_Liste:hover
+    {
+        color : var(--normal-blue-color);
+        border-top: 3px solid var(--normal-blue-color);
+    }
+    
+.Header_Nav_Lien:hover
+    {
+        color : var(--normal-blue-color);
+    }
+
+ #Header_Logo_Nav li:nth-child(1) a
+    {
+        margin-right:-12px;
+    }
+
+ #Header_Logo_Nav li:nth-child(2) a
+    {
+        margin-left:25px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*     Section Entete - Titre                                                                    */
+/*-----------------------------------------------------------------------------------------------*/
+#Titre
+{
+    margin-bottom: 17px;
+}
+
+#Titre h1
+    {
+        font-size: 19.3px;
+        margin: 1px 0 -5px 3px;
+    }
+
+#Titre p
+    {
+        color: black;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-top: 13px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*     Section Entete - Recherche                                                                */
+/*-----------------------------------------------------------------------------------------------*/
+ #Recherche_Formulaire
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+ .Bouton_Lieu
+    {
+        display: flex;
+        background-color: var(--light-grey-color );
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        border-radius: 15px 0 0 15px;    
+    }
+
+.Recherche_Formulaire_Zone
+    {
+        border: 1px solid var(--light-grey-color);
+        background-color: var(--normal-white-color);
+        padding-left: 13px;
+        padding-right: 10px;
+        color: black;
+        font-weight: bold;
+        outline: var(--light-grey-color);
+        max-width: 300px;
+        font-size: 15.5px;
+    }
+    
+input::placeholder 
+    {
+        color: black;
+        font-size: 15.5px;
+        font-weight: bold;
+    }
+
+.Bouton_Recherche_Formulaire_Bureau
+    {  
+        color: var(--normal-white-color);
+        background-color: var(--normal-blue-color);
+        font-weight: 400;
+        width: 120px;
+        min-width: 100px;
+        border-radius: 0 15px 15px 0;
+        border: none;
+    }
+
+.Bouton_Recherche_Formulaire_Bureau:hover
+    {
+        background-color: var(--light-blue-color);
+        color: var(--normal-blue-color);  
+    }
+
+.Bouton_Recherche_Formulaire_Mobile
+    {
+        display: none;
+        background-color: var(--normal-blue-color );
+        width: 52px;
+        height: 52px;
+        min-width:52px;
+        min-height:52px;
+        border:none;
+        border-radius: 15px ;
+    }
+
+.Bouton_Recherche_Formulaire_Mobile:hover
+    {
+        background-color: var(--light-blue-color);
+        color: var(--normal-blue-color); 
+    }
+    
+.Icone_Bouton_Recherche_Formulaire_Mobile
+    {
+        display: none;
+        color:var(--normal-white-color);
+    } 
+
+/*-----------------------------------------------------------------------------------------------*/
+/*     Section Entete - Filtre                                                                   */
+/*-----------------------------------------------------------------------------------------------*/
+#Filtres
+    {    
+        display: flex;
+        margin: 7px 0 3px 10px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+#Filtres h2
+    {
+        font-size: 16px;
+        color: black;
+        margin: 30px 28px 30px 0;
+        padding: 0;
+    }
+
+#Liste_Filtres
+    {
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+/*------------------------------*/    
+/* 4 boutons-libellés  Filtres  */
+/*------------------------------*/
+.Bouton_Filtre
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+        height: 46px;
+        border-top: 2px solid var(--normal-grey-color);
+        border-right: 2px solid var(--normal-grey-color);
+        border-bottom: 2px solid var(--normal-grey-color);
+        border-radius: 47px;
+        padding-left: 53px;
+        padding-right: 20px;
+        position: relative;
+        margin-right: 17px;
+    }
+
+.Bouton_Filtre:hover
+    {
+        color: var(--normal-blue-color);
+        background-color: var( --normal-acqua-color);
+        transform:scale(1.1);
+        transition : ease 0.3s;
+    }  
+
+.Conteneur_Icone_Bouton_Filtre
+    {
+        display: flex;
+        width: 46px;
+        height: 46px;
+        justify-content: center;
+        align-items:center;
+        background-color: var(--light-blue-color );
+        border-radius: 50%;
+        font-size: 16px;
+        position: absolute;
+        left:-2px;
+    }    
+.Icone_Bouton_Filtre
+    {    
+        color : var(--normal-blue-color );
+    }
+
+.Libelle_Bouton_Filtre 
+    {   
+        font-weight: bold;
+        font-size: 16px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*     Section Entete - Informations                                                             */
+/*-----------------------------------------------------------------------------------------------*/
+#Info
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        margin-left: 7px;
+    }
+
+.Icone_Bouton_Info
+    {
+        padding: 0;
+        color: var(--normal-blue-color );
+        font-size: 12px;
+        font-weight:bold;
+        margin: 16px 20px;
+    }
+
+#Bouton_Info
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 21px;
+        height: 21px;
+        background-color: var(--normal-white-color);
+        border: solid var(--normal-grey-color) 1px;
+        border-radius: 50%;
+        margin: 6px 11px 0 2px;
+    }
+
+#Info p
+    {
+        color: black;
+        font-size: 14px;
+        margin: 15px 0 9px 0;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*      Blocs-Hebergements : Hébergements & les plus populaires                                  */
+/*-----------------------------------------------------------------------------------------------*/
+#Blocs_Hebergements
+    {
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:-3px;    
+    }
+
+.Evaluation
+    {
+        margin:-7px 0 10px 0;
+        display:flex;
+    }
+
+.Etoile_Bleue
+    {
+        color:var(--normal-blue-color);
+        font-size:65%;
+    }
+
+.Etoile_Grise
+    {
+        color:var(--normal-grey-color);
+        font-size:65%;
+    }
+
+.Hebergements_Carte:hover .Etoile_Bleue, .Populaires_Carte:hover .Etoile_Bleue
+    {
+        color:var(--normal-yellow-color);
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*     Blocs-Hebergements : Hébergements                                                         */
+/*-----------------------------------------------------------------------------------------------*/
+#Hebergements
+    {
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--light-grey-color);
+        border-radius: 15px;
+        padding: 26px 3% 23px 3%;
+        height:555px;
+    }
+
+#Hebergements_Ligne
+    {
+        display : flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        margin:0;
+    }
+
+#Hebergements h2
+    {
+        font-size: 120%;
+        margin: 14px 0 10px 0;
+    }
+
+#Hebergements figure
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2px 0 18px 0;
+        background-color: var(--normal-white-color);
+        border: var(--normal-white-color);
+        border-radius: 15px;
+        padding: 5px;
+        height: 87%;
+    }
+
+#Hebergements img
+    {   
+        min-height: 103px;
+        max-height: 103px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+.Textes_Hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%;
+        height: 100%;
+        width: 100%;
+        padding-top: 3px;
+    }
+
+#Hebergements h3 
+    {
+        margin: 6px 0 -5px 0;
+        font-size: 88%;
+    }
+
+.Hebergements_Carte
+    {
+        width:31%;
+    }
+
+/* Tarif hébergement */
+.Prix_Mini 
+    {
+        font-size: 76%;
+        color: black;
+    }
+
+
+#Hebergements i 
+    {
+        font-size:65%;
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Blocs-Hebergements : Hébergements : lien  afficher plus                                  */
+/*-----------------------------------------------------------------------------------------------*/
+.Afficher_Plus
+    {
+        font-weight: bold;
+        font-size: 98%;
+        margin-left: 4px;
+    }
+
+
+.Afficher_Plus :hover 
+    {
+        text-decoration: underline;
+        color:blue;
+    }
+
+.Afficher_Plus p
+    {
+        margin-top:7px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*     Blocs-Hebergements :   Les plus populaires                                                         */
+/*-----------------------------------------------------------------------------------------------*/
+#Populaires
+    {
+        width: 31.5%;
+        background-color: var(--light-grey-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 26px 3% 25px 3%;
+        border-radius: 15px;
+        height: 555px;
+    }
+
+#Populaires h2
+    {
+        margin: 13px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 120%;
+    }
+
+#Populaires h2::after
+    {
+        font-family: FontAwesome;
+        content: "\f005";
+    }
+
+#Populaires figure
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--normal-white-color);
+        border: var(--normal-white-color);
+        border-radius: 15px;
+        min-height: 130px;
+        height: 130px;
+        width: 100%;
+        margin: 26px auto 4px auto;
+        padding: 5px;
+    }  
+
+.Populaires_Carte
+    {
+        width:100%;
+        margin:0;
+    }
+
+#Populaires img
+    {
+        min-width: 123px;
+        max-width: 123px;
+        border-radius: 15px 0 0 15px;
+        min-height: 100%;
+        max-height:145px;
+        padding-right:10px;
+    }
+
+
+.Textes_Populaires 
+    {
+        width: 56%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 8px 0 0;
+    }
+
+.Textes_Populaires h3 
+    {
+        margin: 0;
+        font-size: 86%;
+    }
+
+.Textes_Populaires p
+    {
+    margin-top:7px;  
+    }
+
+#Populaires .Evaluation
+    {
+        margin:0;
+    }
+
+#Populaires i
+    {
+        font-size: 66%;
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*     Section activités                                                                         */
+/*-----------------------------------------------------------------------------------------------*/
+
+#Activites
+    {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding:0;
+        background-color:var(--normal-white-color);
+        margin-bottom: 21px;   
+    }
+
+#Activites h2
+    {
+        margin-top: 59px;
+        font-size: 120%;
+        padding-left: 0;
+        margin-bottom: 18px;
+    }
+
+#Toutes_Images
+    {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+
+.Section_Image
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:22.5%;
+    }
+
+#Activites figure
+    {
+        width:100%;
+        margin:0 0 30px 0; 
+        height:auto;
+        background-color:var(--normal-white-color) ;
+        border-radius:15px;
+    }
+
+#Activites img
+    {    
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+.Img_Grande
+    {
+        height:350px;
+    }
+
+.Img_Pomegues
+    {
+        height:163px;
+    }
+
+.Img_Iles_Frioul
+    {
+        height:95px;
+    }
+
+.Img_Notre_Dame
+    {
+        height:127px;
+    }
+
+.Img_LongChamps
+    {
+        height:137px;
+    }
+
+#Activites figcaption 
+    {
+        width: 100%;
+        display: flex;
+        height: 45px;
+        font-size: 15px;
+        padding: 0 10% 0 10%;
+        align-items: center;
+    }
+
+#Activites h3
+    {   
+        font-size: 14px;
+    }
+
+.Marge_Activites_Titre_Iles_Du_Frioul
+    {
+        margin: 20px 0 20px -4%;
+    } 
+
+.Marge_Activites_Titre
+    {
+        margin: 20px 0 20px -5%;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+/*      FOOTER                                                                                   */
+/*-----------------------------------------------------------------------------------------------*/
+
+footer
+    {
+        background-color: var(--light-grey-color);
+        width : 100%;
+        padding:24px 0 2px 0 ;
+    }
+
+.Footer_Conteneur
+    {
+        display:flex;
+        justify-content: space-between;
+    }
+
+.Footer_Item
+    {
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+    }
+
+footer h3
+    {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+footer a
+    {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding: 5px 0 10px 0;
+        font-size:14px;
+    }
+
+footer a:hover
+    {
+        color:var(--normal-blue-color)
+    }
+
+.Footer_Item_Assistance
+    {
+        padding-left:3px;
+    }

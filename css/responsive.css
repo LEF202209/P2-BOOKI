@@ -1,0 +1,637 @@
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 992px                                  */
+/*********************************************************************************************************/
+/*            VUE TABLETTE                                                                               */
+/*********************************************************************************************************/
+@media screen and (max-width: 992px)
+ {
+    
+    /*----------------------------------------------------------------------------------------*/
+    /*  Section Entete : Logo & Menu de navigation                                            */                                                                                   
+    /*----------------------------------------------------------------------------------------*/
+    /* Menu */
+    #Header_Logo_Nav li:nth-child(1) a 
+        {
+            margin-right: -5px;
+        }
+
+    header nav
+        {
+            width: 25%;
+        }
+    
+    header ul
+        {
+            padding-left: 0;
+        }
+    /*------------------------------*/
+    /* Section Entete - Filtres     */
+    /*------------------------------*/
+    #Filtres
+    {
+        flex-direction: column;
+        margin:0 ;
+        gap:11px;
+    }
+
+    #Liste_Filtres
+        {
+            margin:0 0 15px -10px;
+        }
+
+    .Bouton_Lieu, .Icone_Bouton_Filtre
+        { 
+            font-size:20px;
+        }
+     /*--------------------------------*/
+     /* Section Entete - Informations  */
+     /*--------------------------------*/
+
+    #Info 
+        {
+            margin: 20px 0 25px 0;
+        } 
+        
+    /*----------------------------------------------------------------------------------------*/
+    /*  Blocs_Hebergements                                                                    */  
+    /*----------------------------------------------------------------------------------------*/
+    #Blocs_Hebergements
+        {
+            flex-direction:column-reverse;
+        }   
+
+     /*----------------------------------------------------------------------------------------*/
+     /*  Les plus populaires                                                                   */  
+     /*----------------------------------------------------------------------------------------*/
+    #Populaires
+        {
+            height:auto; 
+            width:100%;
+            padding: 20px 4% 30px 4%;
+            margin-bottom:20px; 
+        }
+
+    #Populaires_Colonne
+        {
+            display: flex;
+            justify-content:space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    #Populaires figure
+        {
+            max-width:450px;
+            width:100%;
+            height:155px;
+            margin:0;
+        }
+
+    .Populaires_Carte
+        {
+            width:31%;
+        }
+
+    #Populaires h2
+        {
+            font-size:148%;
+            padding: 20px 0 20px 0;
+        }
+
+    #Populaires img
+        {
+            max-height: 160px; 
+            height: auto;
+            min-width: 120px;
+            max-width: 120px;
+        }
+
+    #Populaires i
+        {
+            font-size:65%;
+        }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*  Hebergements                                                                          */  
+    /*----------------------------------------------------------------------------------------*/
+    #Hebergements
+        {
+            width:100%;
+            height:840px; 
+        }
+
+    #Hebergements_Ligne 
+        {
+            justify-content:space-around;
+        }
+
+    .Hebergements_Carte
+        {
+            width: 45%;
+            margin-top:6px;
+            margin-bottom:6px;
+        } 
+
+    #Hebergements figure
+    {
+        height:92%;
+    }
+
+    #Hebergements img
+        {
+            height:125px;
+            min-height:125px;
+        }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*  Activités                                                                             */  
+    /*----------------------------------------------------------------------------------------*/
+     
+    
+    #Activites h2
+        {
+            margin-bottom:40px;
+        }
+
+    .Section_Image
+        {
+            width:46%; 
+        }
+
+} 
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px                                  */
+/*********************************************************************************************************/
+/*            VUE MOBILE                                                                                 */
+/*********************************************************************************************************/
+@media screen and (max-width: 768px)
+ {
+    .Conteneur
+        {
+            width:100%;
+        }
+
+/******************************************************************************************/
+/* Entete (Titre -  Recherche - Filtres - Informations) & Titre  & Afficher plus          */ 
+/******************************************************************************************/
+    #Entete, #Populaires h2, #Hebergements h2, #Activites h2, .Afficher_Plus
+        {
+            width:90%;
+            margin:auto;
+        } 
+/******************************************************************************************/
+/*  Section Entete : Logo & Menu de navigation                                            */                                                                                   
+/******************************************************************************************/
+/*-----------------------------------------------------------------------------------------------*/
+/*      HEADER                                                                                   */
+/*-----------------------------------------------------------------------------------------------*/ 
+
+/* Logo */
+    header img
+        {
+            height: 50px;
+            margin-top: 22px;
+            margin-bottom: -5px;
+        }
+
+/* Logo & menu de navigation */  
+    #Header_Logo_Nav
+        {
+            flex-direction: column;
+            margin: 0;
+            font-size: 100%;
+            width: 100%;
+        }
+
+/* Menu de navigation */
+    header nav
+        {
+            width:100%;
+            font-size:19px;
+        }
+    
+    header ul
+        {
+            margin:0;
+        }
+
+    .Header_Nav_Liste
+        {
+            font-size: 17.5px;
+            padding: 38px 0 16px 0;
+            border-bottom: 4px solid var(--normal-grey-color);
+        } 
+
+    .Header_Nav_Liste:hover
+        {
+            border-bottom: 4px solid var(--normal-blue-color);
+            border-top:none;       
+        }
+
+    #Header_Logo_Nav li:nth-child(2) a 
+        {
+            margin-left: -7px;
+        }
+   
+    
+/*-----------------------------------------------------------------------------------------------*/
+/*      Section Entete   - Titre                                                                   */
+/*------------------------------------------------------------------------------------------------*/ 
+    #Titre
+        {
+            margin-top: 4px;
+        }
+
+    #Titre h1
+        {
+            font-size: 24.3px;
+            margin: 4px 0 -2px 0px;
+        } 
+
+    #Titre p
+        {
+            font-size: 17.4px;
+            margin: 18px 0 42px 2px;
+        }
+/*-----------------------------------------------------------------------------------------------*/
+/*      Section Entete   - Recherche (Formulaire)                                                */
+/*-----------------------------------------------------------------------------------------------*/ 
+    #Recherche_Formulaire
+        {
+            margin: 0px 0 31px 5px;
+            max-width: 363px;
+        } 
+
+    .Bouton_Lieu
+        {
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+            min-height: 52px;
+            border-radius: 15px 0 0 15px;
+        }
+
+    input , input::placeholder
+        {
+            width: 100%; 
+            max-width: 300px;
+            font-size:19.5px;
+        }
+
+    .Bouton_Recherche_Formulaire_Bureau
+        {
+            display : none;
+        }
+
+    .Bouton_Recherche_Formulaire_Mobile
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }    
+
+    .Icone_Bouton_Recherche_Formulaire_Mobile
+        {
+            display:block;
+            font-size:18px;
+        } 
+
+    .Recherche_Formulaire_Zone
+        {
+            padding-left:21px;
+        }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Section Entete   - Filtres                                                               */
+/*-----------------------------------------------------------------------------------------------*/    
+#Liste_Filtres
+    {
+        gap:9px;
+        margin:0;
+    }    
+
+#Filtres h2
+    {
+        margin: 8px 0 5px 4px;
+        font-size: 19.5px;
+    }
+
+.Bouton_Filtre
+    {
+        margin-bottom: 3px;
+        height:56px;
+        padding-left:67px;
+        margin-right: 4px;
+    }
+
+.Conteneur_Icone_Bouton_Filtre
+    {
+        
+        background-color: var(--light-blue-color );
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        font-size: 19px;
+    }
+
+.Libelle_Bouton_Filtre
+    {
+        font-size: 17.9px;
+    }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Section Entete   - Informations                                                          */
+/*-----------------------------------------------------------------------------------------------*/ 
+
+    #Info 
+        {
+            margin: 18px 0 33px -3px;
+        }
+
+    #Bouton_Info
+        {
+            display: flex;
+            background-color: white;
+            border: solid var(--normal-grey-color) 1px;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 14px 15px 5px;
+        }
+
+    #Info p
+        {
+            font-size:17.4px;
+            margin: 18px 0 9px 0;
+        }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Blocs-Hebergements - Hébergements & les plus populaires                                  */
+/*-----------------------------------------------------------------------------------------------*/ 
+
+    #Blocs_Hebergements section
+        {
+            margin:0;
+        }
+
+/*-------------------------------------------*/
+/* Général Hébergements & les plus populaires*/
+/*-------------------------------------------*/
+   .Hebergements_Carte, .Populaires_Carte, .Activites_Carte
+        {
+            width:90%;
+            margin: 8px auto;
+            max-width: 450px;
+        }
+
+    
+    #Hebergements figure , #Activites figure
+        {
+            margin:0;
+        }
+    
+
+    #Hebergements i, #Populaires i
+        {
+            font-size: 85%;
+        }
+
+    #Hebergements h2, #Activites h2
+        {
+            font-size:152%;
+            padding-bottom:10px;
+        }
+    
+/*-----------------------------------------------------------------------------------------------*/
+/*      Blocs-Hebergements  -  Les plus populaires                                               */
+/*-----------------------------------------------------------------------------------------------*/ 
+    #Populaires
+        {
+            background-color: var(--light-grey-color);
+            border-radius: 0;
+            padding: 0 0 26px 0;;
+            margin-bottom: 25px;
+        }
+
+    #Populaires_Colonne
+        {
+            margin-bottom:10px;
+        }
+
+    #Populaires h2
+        { 
+            padding: 42px 3px 24px  1px;
+            font-size: 149%;
+        }
+
+    #Populaires h2::after
+        {
+            font-size:22px;
+        }
+
+    
+    .Populaires_Carte
+        {
+            margin:6px auto;
+        }
+
+    #Populaires figure 
+        {
+            height:160px;
+            border-radius: 20px;
+        }
+    #Populaires img 
+        {
+            height: auto;
+            min-width: 42%;
+            width: 42%;
+            border-radius: 20px 0 0 20px;
+        }
+
+    .Textes_Populaires
+        {
+            width: 55%;
+            justify-content: space-between;
+            margin-top: 13px;
+            padding: 0;
+        }
+
+    .Textes_Populaires h3
+        {
+            font-size: 109%;
+            margin: -2px 0 0 0;
+        }
+
+    .Nom_Prix_Populaires
+        {
+            height:70%;
+        }
+
+    #Populaires .Prix_Mini
+        {
+            font-size:95%;
+            margin:9px 0 16px 0;  
+            padding:0; 
+        }
+
+    #Populaires .Evaluation
+        {
+            margin: 0px 0 13px 0;
+        }
+
+ 
+/*-----------------------------------------------------------------------------------------------*/
+/*     Blocs-Hebergements  -  Hébergements                                                       */
+/*-----------------------------------------------------------------------------------------------*/ 
+    #Hebergements
+        {
+            background-color:white;
+            height: auto;
+            padding-left:0;
+            padding-right:0;
+        }
+    
+    #Hebergements_Ligne
+        {
+            display : flex;
+            flex-direction:column;
+        }
+
+    #Hebergements h2
+        {
+            margin: -14px 0 7px 22px;
+            font-size: 149%;
+        }
+   #Hebergements figure 
+    {
+            border-radius:15px;
+    }
+   
+   .Hebergements_Carte
+        {
+            height: auto;
+            margin: 7px auto;
+        }
+
+    #Hebergements img
+        {   
+            min-height: 124px;
+            max-height: 124px;
+            border-radius: 15px 15px 0 0;
+        }
+
+    #Hebergements h3
+        {
+            font-size:105%;
+            margin:7px 0 -6px 0; 
+        }
+
+    #Hebergements .Prix_Mini
+        {
+            font-size:95%;
+        }
+    #Hebergements .Evaluation
+        {   
+            margin: -10px 0 10px -2px;
+        }
+/*-----------------------------------------------------------------------------------------------*/
+/*      Blocs-Hebergements  -  Hébergements - Afficher plus                                      */
+/*-----------------------------------------------------------------------------------------------*/ 
+    .Afficher_Plus
+        {
+            font-size: 122%;
+            padding: 17px 0 24px 0;
+        }
+
+      
+        
+/*-----------------------------------------------------------------------------------------------*/
+/*      Activités                                                                                */
+/*-----------------------------------------------------------------------------------------------*/ 
+    #Activites
+        {
+            margin-bottom:35px;
+        }
+
+    #Toutes_Images
+        {
+            flex-direction:column;
+        }
+
+    .Section_Image
+        {
+            width:100%; 
+        }
+
+    #Activites h2
+        {
+            margin-left:23px;
+            font-size:150%;
+        }
+
+    #Activites figure
+        {
+            width:100%;
+            border-radius:20px;
+        }
+
+    #Activites img
+        {
+            min-height: 147px;
+            max-height: 147px;
+            border-radius: 20px 20px 0 0;
+        }
+
+    #Activites figcaption
+        {
+            font-size:18px;
+            padding-left: 18px;
+            height:61px;
+        }
+
+    #Activites h3
+        {
+            font-size: 17.7px;
+            margin: 9px 0 0 4px;
+            padding: 0;
+        }
+
+    .Activites_Carte
+        {
+            margin:13px auto;
+        }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*      Footer                                                                                   */
+/*-----------------------------------------------------------------------------------------------*/ 
+    .Footer_Conteneur
+        {
+            flex-direction: column;
+            margin:0;
+            padding-bottom:30px;
+            padding-top:0;
+        }
+
+    .Footer_Item
+        {
+            width: 84%;
+            margin: 7px auto 4px auto;
+        }
+
+    .Footer_Item_Assistance
+        {
+            padding-top:12px;
+        }
+
+    footer h3
+        {
+            padding-top:7px;
+            font-size:20px;
+        }
+
+    footer a
+        {    
+            font-size:17.5px;
+        }
+
+}
